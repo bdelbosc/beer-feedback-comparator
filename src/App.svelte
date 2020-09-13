@@ -3,6 +3,7 @@
   import Load from "./Load.svelte";
   import User from "./User.svelte";
   import BoxGroupPlot from "./comp/BoxGroupPlot.svelte";
+  import pkg from '../package.json'
   import {parseAroma, parseFlavor} from "./js/Aggregate";
 
   let user;
@@ -93,9 +94,18 @@
 <style>
     :global(custom-dropzone) {
     }
-span.expert {
-    font-style: italic;
-}
+
+    span.expert {
+        font-style: italic;
+    }
+
+    div.footLine {
+        border-top: 1px solid #dee2e6;
+        width: 100%;
+        font-size: 0.6em;
+        color: #999;
+        clear: both;
+    }
 </style>
 
 <Tabs bind:activeTabValue={currentTab} items={tabItems}/>
@@ -172,3 +182,5 @@ span.expert {
     </ul>
   {/each}
 {/if}
+
+<div class="footLine">{pkg.name} v{pkg.version}</div>
