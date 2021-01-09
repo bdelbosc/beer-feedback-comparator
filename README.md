@@ -1,4 +1,4 @@
-# ![Link Beer Feedback](./public/favicon-32x32.png) Beer Feedback
+# ![Link Beer Feedback](./public/favicon-32x32.png) Beer Feedback Comparator
 
 ## About
 
